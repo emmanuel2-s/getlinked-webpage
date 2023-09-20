@@ -1,38 +1,140 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: #150e28;
+  height: 100%;
+  /* font-family: 'Outfit', sans-serif; */
+  /* font-family: 'Anton', sans-serif; */
+  margin: 0 auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App {}
+
+h1 {
+  font-family: 'Play', sans-serif;
+  font-weight: bolder;
+  font-size: 35px;
+  margin-left: 100px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+h1 span {
+  color: #d434fe;
 }
 
-.App-link {
-  color: #61dafb;
+nav .btn {
+  color: #fff;
+  background-image: url(/public/assets/img/Rectangle\ 6.png);
+  background-repeat: no-repeat;
+  border-radius: 5px;
+  width: 160px;
+  margin-right: 100px;
+  margin-left: 50px;
+  height: 45px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.fh {
+  margin-left: 150px;
+  margin-top: 30px;
+}
+
+.d h2 {
+  font-style: italic;
+  margin-right: 100px;
+}
+
+.d h2 span {
+  border-bottom: 15px solid transparent;
+  border-image: url(/public/assets/img/Vector\ 4.png)20;
+}
+
+.f {
+  z-index: -2;
+}
+
+.star {
+  float: right;
+}
+
+.title {
+  margin-top: 100px;
+  max-width: 800px;
+}
+
+.title h1 {
+  font-family: 'Play', sans-serif;
+  font-weight: bolder;
+  font-size: 60px;
+  color: #fff;
+  position: relative;
+}
+
+.title h1 .img1 {
+  position: absolute;
+  top: -20px;
+  left: 360px;
+}
+
+.title p {
+  margin-left: 100px;
+}
+
+.title .btn {
+  color: #fff;
+  background-image: url(/public/assets/img/Rectangle\ 6.png);
+  background-repeat: no-repeat;
+  border-radius: 5px;
+  width: 160px;
+  margin-left: 100px;
+  margin-top: 20px;
+  height: 45px;
+}
+
+section p {
+  font-family: 'Play', sans-serif;
+  font-size: 25px;
+}
+
+section p span {
+  font-size: 12px;
+}
+
+.man-img {
+  position: relative;
+  margin-left: 200px;
+}
+
+.man-img .img2 {
+  position: absolute;
+  right: 70px;
+  top: -20px;
+  background-size: contain;
+  z-index: 1;
+}
+
+.man-img .img3 {
+  position: absolute;
+  right: 20px;
+  top: -70px;
+}
+
+.about {
+  background-image: url(/public/assets/img/Rectangle\ 7.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.about .imgg1 {
+  margin-top: 50px;
+  margin-left: 100px;
+}
+
+.about .imgg {
+  position: absolute;
+  left: 265px;
+  top: 230px;
 }
