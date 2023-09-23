@@ -5,7 +5,10 @@ import './Registration.css'
 function Registration() {
 
     const ShowModal = () => {
-        document.getElementById('modalId').style.display = "block"
+        setTimeout(() => {
+            document.getElementById('modalId').style.display = "block"
+
+        }, 3000)
     }
 
     const CloseModal = () => {

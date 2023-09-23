@@ -16,7 +16,7 @@ function Rules() {
                         <img src='/assets/img/star.png' className='' width={26} height={32} />
                     </div>
                 </div>
-                <section>
+                <section className='woman-bck'>
                     <img src='/assets/img/Ellipse 2.png' className='ellipse' />
                     <div className='illustration'>
                         <img src='/assets/img/7450159 1.png' alt='illustration' />

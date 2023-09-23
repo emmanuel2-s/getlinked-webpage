@@ -93,8 +93,10 @@ nav .btn {
 .title {
   float: left;
   position: relative;
-  width: 828px;
-  height: 715px
+  width: 722px;
+  height: 236px;
+  /* width: 628px;
+  height: 715px */
 }
 
 .img-shadow {
@@ -149,6 +151,13 @@ nav .btn {
   height: 66px;
 }
 
+.abbb {
+  background-image: url(/public/assets/img/Rectangle\ 7.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 625px;
+}
+
 .title .btn {
   color: #fff;
   background-image: url(/public/assets/img/Rectangle\ 6.png);
@@ -186,11 +195,12 @@ nav .btn {
   margin-top: 10px;
   position: relative;
   float: right;
+
 }
 
 .man-img .smart {
-  width: 628px;
-  height: 615px;
+  width: 728px;
+  height: 715px;
 }
 
 .man-img .img2 {
@@ -267,6 +277,7 @@ h4 {
 
 
 .rules-bg {
+  z-index: 2;
   /* background-image: url(/public/assets/img/Rectangle\ 7.png);
   background-repeat: no-repeat;
   background-size: cover; */
@@ -327,21 +338,25 @@ h4 {
   color: #fff;
 }
 
-.rules-bg section .illustration {
+.woman-bck {
+  position: relative;
+}
+
+.woman-bck .illustration {
   margin-left: 100px;
 }
 
-.rules-bg section .ellipse {
+.woman-bck .ellipse {
   position: absolute;
-  top: 1355px;
-  left: 1135px;
+  bottom: 414px;
+  left: 495px;
   z-index: -1;
 }
 
-.rules-bg section .shadow-bck {
+.woman-bck .shadow-bck {
   position: absolute;
-  top: 1355px;
-  left: 1116px;
+  bottom: -455px;
+  left: 480px;
   z-index: -1;
 }
 
