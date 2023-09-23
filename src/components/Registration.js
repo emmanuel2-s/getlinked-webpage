@@ -30,13 +30,13 @@ function Registration() {
                 <Link to={'/'}><h1 className='text-white'>get<span>linked</span></h1></Link>
                 <ul class="nav ">
                     <li class="nav-item">
-                        <a href="#timeline" class="nav-link text-white" aria-current="page">Timeline</a>
+                        <a href="#" class="nav-link text-white" aria-current="page">Timeline</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#criteria" class="nav-link text-white">Overview</a>
+                        <a href="#" class="nav-link text-white">Overview</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#faqs" class="nav-link text-white">FAQs</a>
+                        <a href="#" class="nav-link text-white">FAQs</a>
                     </li>
                     <Link to={'/contact'} > <li class="nav-item me-5">
                         <img src='/assets/img/Contact.png' className='mt-2 ms-3' height={16} />

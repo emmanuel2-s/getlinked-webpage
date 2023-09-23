@@ -19,7 +19,7 @@ function NavBar() {
                     <Link to={'/contact'} > <li class="nav-item me-5">
                         <a href="#" class="nav-link text-white">Contact</a>
                     </li></Link>
-                    <button className='btn'>Register</button>
+                    <Link to={'/register'} ><button className='btn'>Register</button></Link>
                 </ul>
             </nav>
 
