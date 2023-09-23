@@ -55,19 +55,16 @@ function Faqs() {
 
                     </div>
                 </div>
-
-                <div className='faqs-qm'>
+                <div className='faqs-illus'>
                     <img src='/assets/img/_-2.png' className='img1' />
                     <img src='/assets/img/_-1.png' className='img2' />
                     <img src='/assets/img/_.png' className='img3' />
-                    <img src='/assets/img/sata gra.png' className='img4' />
-                    <img src='/assets/img/sata gra.png' className='img5' />
-                </div>
-                <div className='faqs-illus'>
                     <img src='/assets/img/starr.png' alt='star' className='starr' />
 
                     <img src='/assets/img/cwok_casual_21 1.png' />
                     <div className='faqs-iilus-star'>
+                        <img src='/assets/img/sata gra.png' className='img_5' />
+                        <img src='/assets/img/sata gra.png' className='img_4' />
                         <img src='/assets/img/star.png' alt='star' />
                     </div>
                 </div>

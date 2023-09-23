@@ -19,7 +19,7 @@ function Rewards() {
                     <p>Highlight of the prizes or rewards for winners and
                         for participants.</p>
                     <img src='/assets/img/star.png' className='img6' width={21} height={25} />
-                    <img src='/assets/img/rewards.png' />
+                    <img src='/assets/img/rewards.png' width={600} />
                     <img src='/assets/img/star.png' className='img7' width={21} height={25} />
                     <img src='/assets/img/starr.png' className='img8' width={21} height={25} />
                     <img src='/assets/img/Purple-Lens-Flare-PNG-1.png' className='img9' />

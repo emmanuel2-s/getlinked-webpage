@@ -17,7 +17,7 @@ function Partnership() {
                     <img src='/assets/img/sata gra.png' className='img2' width={18} height={21} />
                     <img src='/assets/img/Partner and sponsors section.png' className='img3' />
                     <img src='/assets/img/star.png' className='img4' width={21} height={25} />
-                    <img src='/assets/img/Purple-Lens-Flare-PNG-1.png' className='img5' />
+                    <img src='/assets/img/Purple-Lens-Flare-PNG-1.png' className='img-5' />
 
                 </div>
             </div>

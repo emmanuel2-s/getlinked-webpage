@@ -93,10 +93,8 @@ nav .btn {
 .title {
   float: left;
   position: relative;
-  width: 722px;
-  height: 236px;
-  /* width: 628px;
-  height: 715px */
+  /* width: 622px; */
+  width: 628px;
 }
 
 .img-shadow {
@@ -117,7 +115,7 @@ nav .btn {
   color: #fff;
   position: relative;
   margin-left: 100px;
-  width: 722px;
+  width: 540px;
   /* height: 236px; */
   margin-top: 100px;
 }
@@ -199,8 +197,8 @@ nav .btn {
 }
 
 .man-img .smart {
-  width: 728px;
-  height: 715px;
+  width: 670px;
+  height: 615px;
 }
 
 .man-img .img2 {
@@ -367,6 +365,7 @@ h4 {
 }
 
 .criteria {
+  position: relative;
   padding-top: 100px;
   margin-left: 20px;
   z-index: 2;
@@ -374,24 +373,25 @@ h4 {
 
 .criteria-img {
   position: absolute;
-  left: 160px;
-  bottom: -1275px;
+  left: 150px;
+  top: -105px;
 }
 
 .criteria-illus {
+  position: relative;
   padding-top: 30px;
 }
 
-.criteria .ellipse {
+.criteria-illus .ellipse-2 {
   position: absolute;
-  bottom: -1470px;
-  left: 118px;
+  bottom: 490px;
+  left: 98px;
   z-index: -1;
 }
 
 .criteria-illus .ss {
   position: absolute;
-  bottom: -1685px;
+  bottom: 255px;
   left: 425px;
 }
 
@@ -557,53 +557,60 @@ h4 {
   transition: max-height 0.2s ease-out;
 }
 
-.faqs-illus img {
+.faqs-illus {
   padding-top: 100px;
   position: relative;
   margin-right: 60px;
 }
 
-.faqs-qm .img1 {
+.faqs-illus .img1 {
   position: absolute;
-  bottom: -2249px;
-  left: 769px;
+  top: 100px;
+  left: 69px;
 }
 
-.faqs-qm .img2 {
+.faqs-illus .img2 {
   position: absolute;
-  bottom: -2210px;
-  left: 935px;
+  top: 38px;
+  left: 225px;
 }
 
-.faqs-qm .img3 {
+.faqs-illus .img3 {
   position: absolute;
-  bottom: -2249px;
-  left: 1125px;
+  top: 90px;
+  left: 415px;
 }
 
-.faqs-qm .img4 {
+.faqs-.about {
   position: absolute;
   bottom: -2190px;
   left: 1050px;
 }
 
-.faqs-qm .img5 {
+.faqs-iilus-star .img_4 {
   position: absolute;
-  bottom: -2359px;
-  left: 839px;
+  bottom: 760px;
+  left: -225px;
 }
 
-.faqs-iilus-star {
+.faqs-iilus-star .img_5 {
+  position: absolute;
+  top: -598px;
+  left: -425px;
+}
+
+
+.faqs-illus .faqs-iilus-star {
   float: right;
   position: absolute;
-  bottom: -2930px;
+  bottom: -20px;
   right: 150px;
 }
 
 .faqs-illus .starr {
   position: absolute;
-  bottom: -2595px;
-  margin-left: 70px;
+  top: 490px;
+  margin-left: 20px;
 }
 
 .timeline-cont {
@@ -830,9 +837,10 @@ h4 {
   position: absolute;
   z-index: -9;
   width: 700px;
-  height: 600px;
-  left: 150px;
-  opacity: 60%;
+  height: 700px;
+  top: 44px;
+  left: 130px;
+  opacity: 70%;
 }
 
 .title-head {
@@ -872,18 +880,19 @@ h4 {
   color: #fff;
   width: 401px;
   margin-left: 170px;
+  padding-bottom: 40px;
 }
 
 .title-head .img6 {
   position: absolute;
-  bottom: 467px;
+  bottom: 417px;
   left: 78px;
 }
 
 .title-head .img7 {
   position: absolute;
   bottom: 347px;
-  left: 678px;
+  left: 578px;
 }
 
 .title-head .img8 {
@@ -896,7 +905,7 @@ h4 {
   position: absolute;
   z-index: -1;
   bottom: -270px;
-  left: 355px;
+  left: 288px;
   width: 400px;
   height: 700px;
   opacity: 80%;
@@ -966,7 +975,7 @@ h4 {
   opacity: 70%;
 }
 
-.sponsors .img5 {
+.sponsors .img-5 {
   z-index: -1;
   position: absolute;
   width: 700px;

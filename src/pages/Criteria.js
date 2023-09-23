@@ -5,11 +5,9 @@ function Criteria() {
         <>
             <div className='criteria-container' id='criteria'>
                 <div className='criteria'>
-                    <div className='criteria-img'>
-                        <img src='assets/img/star pu.png' width={30} height={36} />
-                    </div>
-                    <img src='/assets/img/Ellipse 2.png' className='ellipse' />
                     <div className='criteria-illus'>
+                        <img src='assets/img/star pu.png' className='criteria-img' width={30} height={36} />
+                        <img src='/assets/img/Ellipse 2.png' className='ellipse-2' />
                         <img src='assets/img/8046554 1.png' />
                         <img src='assets/img/starr.png' className='ss' />
                     </div>
