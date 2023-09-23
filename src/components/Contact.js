@@ -1,0 +1,81 @@
+import React from 'react'
+import NavBar from '../pages/NavBar'
+import './Contact.css'
+import { Link } from 'react-router-dom'
+
+function Contact() {
+    return (
+        <>
+            <div>
+                <nav className='d-flex justify-content-between pt-5 align-items-center'>
+                    <Link to={'/'}><h1 className='text-white'>get<span>linked</span></h1></Link>
+                    <img src='/assets/img/Group 1.png' width={23} height={23} className='back-btn' />
+                    <ul class="nav ">
+                        <li class="nav-item">
+                            <a href="#timeline" class="nav-link text-white" aria-current="page">Timeline</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#criteria" class="nav-link text-white">Overview</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#faqs" class="nav-link text-white">FAQs</a>
+                        </li>
+                        <Link to={'/contact'} > <li class="nav-item me-5">
+                            <img src='/assets/img/Contact.png' className='mt-2 ms-3' height={16} />
+                            {/* <a href="#" class="nav-link text-white">Contact</a> */}
+                        </li></Link>
+                        <Link to={'/register'} ><button className='btn'>Register</button></Link>
+                    </ul>
+                </nav>
+
+                <div className='wrapper'>
+                    <img src='/assets/img/Purple-Lens-Flare-PNG.png' className='img5' width={700} height={600} />
+
+                    <div className='contact'>
+                        <img src='/assets/img/sata gra.png' className='img1' width={20} height={26} />
+
+                        <h1>Get in touch</h1>
+
+                        <ul>
+                            <li>Contact<br />
+                                Information</li>
+                            <li>27,Alara Street<br />
+                                Yaba 100012<br />
+                                Lagos State</li>
+                            <li>Call Us : 07067981819</li>
+                            <li>we are open from Monday-Friday<br />
+                                08:00am - 05:00pm</li>
+                        </ul>
+                        <p className='share'>Share on</p>
+                        <div className='socia'>
+                            <img src='/assets/img/mdi_instagram.png' />
+                            <img src='/assets/img/vector (1).png' />
+                            <img src='/assets/img/vector (2).png' />
+                            <img src='/assets/img/ri_linkedin-fill.png' />
+                        </div>
+                    </div>
+
+                    <div className='form-cont'>
+                        <img src='/assets/img/starr.png' className='img2' width={20} height={26} />
+
+                        <form className='forms'>
+                            <p>Questions or need assistance? Let us know  about it!</p>
+                            {/* <p>Let us know  about it!</p> */}
+                            <input type='text' className='name' id='name' placeholder='First Name' />
+                            <input type='email' className='email' id='email' placeholder='Email' />
+                            <textarea name='message' placeholder='Message' cols={30}></textarea>
+
+                            <button className='btn mt-4'>Submit</button>
+                        </form>
+                        <img src='/assets/img/sata gra.png' className='img3' width={20} height={26} />
+                        <img src='/assets/img/star.png' className='img4' width={20} height={26} />
+                        <img src='/assets/img/Purple-Lens-Flare-PNG (1).png' className='img6' width={500} height={500} />
+
+                    </div>
+                </div>
+            </div>
+        </>
+    )
+}
+
+export default Contact

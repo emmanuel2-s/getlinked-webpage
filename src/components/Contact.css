@@ -1,0 +1,156 @@
+.wrapper {
+    padding-top: 80px;
+    position: relative;
+}
+
+.contact h1 {
+    font-family: 'Clash Display', sans-serif;
+    font-weight: bolder;
+    font-size: 35px;
+    margin-left: 25px;
+    color: #D434FE;
+}
+
+.contact li {
+    /* margin-left: 70px; */
+    list-style-type: none;
+    padding-top: 20px;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.contact .share {
+    color: #D434FE;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-left: 25px;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-around
+}
+
+.contact .socia {
+    margin-left: 25px;
+    /* width: 140px; */
+}
+
+.contact .socia img {
+    padding-right: 15px;
+}
+
+.form-cont {
+    background-image: url(/public/assets/img/Rectangle\ 10.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 617px;
+    height: 511px;
+    position: relative;
+}
+
+.form-cont p {
+    color: #D434FE;
+    font-family: 'Clash Display', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 35px;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 301px;
+    margin-right: 120px;
+}
+
+.form-cont .img2 {
+    position: absolute;
+    left: 546px;
+    top: -55px;
+}
+
+.back-btn {
+    float: left;
+}
+
+.form-cont .img3 {
+    position: absolute;
+    left: -4px;
+    top: 355px;
+}
+
+.form-cont .img4 {
+    position: absolute;
+    left: 534px;
+    top: 415px;
+}
+
+.forms {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.forms .name,
+.email {
+    color: #fff;
+    width: 70%;
+    padding: 10px;
+    margin-bottom: 20px;
+    /* background-color: transparent; */
+    border-radius: 5px;
+    border: 1px solid #fff;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.03));
+}
+
+::placeholder {
+    color: #fff;
+}
+
+textarea {
+    color: #fff;
+    width: 70%;
+    height: 100px;
+    padding-left: 8px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.03));
+}
+
+.forms .btn {
+    color: #fff;
+    background-image: url(/public/assets/img/Rectangle\ 6.png);
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    width: 173px;
+    /* margin-right: 100px; */
+    margin-left: 0px;
+    height: 53px;
+    align-self: center;
+}
+
+.wrapper .img5 {
+    position: absolute;
+    top: -87px;
+    left: -63px;
+    z-index: -1;
+    opacity: 50%;
+}
+
+.form-cont .img6 {
+    position: absolute;
+    right: -146px;
+    bottom: -30px;
+    z-index: -1;
+    opacity: 50%;
+}
