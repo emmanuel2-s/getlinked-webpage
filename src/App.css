@@ -91,15 +91,21 @@ nav .btn {
 }
 
 .title {
-  width: 722px;
-  height: 236px;
-  margin-top: 100px;
-  max-width: 1000px;
+  float: left;
+  position: relative;
+  width: 828px;
+  height: 715px
 }
 
 .img-shadow {
   z-index: -3;
   position: relative;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 .title h1 {
@@ -109,6 +115,9 @@ nav .btn {
   color: #fff;
   position: relative;
   margin-left: 100px;
+  width: 722px;
+  /* height: 236px; */
+  margin-top: 100px;
 }
 
 .title h1 span {
@@ -136,6 +145,8 @@ nav .btn {
   letter-spacing: 0em;
   text-align: left;
   margin-left: 100px;
+  width: 522px;
+  height: 66px;
 }
 
 .title .btn {
@@ -149,29 +160,43 @@ nav .btn {
   height: 53px;
 }
 
-section .time {
+.hu {
+  display: flex;
+  /* align-items: center; */
+  width: 291px;
+  height: 85px;
+  margin-left: 100px;
+}
+
+.hu .time {
   font-family: 'Unica One', cursive;
   font-size: 64px;
   font-weight: 400;
   line-height: 85px;
   letter-spacing: 0em;
+  padding-right: 20px;
 }
 
-section p span {
+.hu .time span {
   font-size: 12px;
 }
 
 
 .man-img {
+  margin-top: 10px;
   position: relative;
-  margin-left: 200px;
+  float: right;
+}
+
+.man-img .smart {
+  width: 628px;
+  height: 615px;
 }
 
 .man-img .img2 {
   position: absolute;
   right: 70px;
   top: -20px;
-  background-size: contain;
   z-index: 1;
 }
 

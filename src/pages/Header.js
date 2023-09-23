@@ -10,7 +10,7 @@ function Header() {
                 <h2 className='text-white'>Ingniting a Revolution in <span>HR Innovation</span></h2>
             </div>
 
-            <div className='d-flex '>
+            <div className='header clearfix'>
 
                 <div className='title'>
                     <div className='star'>
@@ -29,15 +29,15 @@ function Header() {
                     <div className='star2'>
                         <img src='/assets/img/starr.png' className='' width={26} height={32} />
                     </div>
-                    <section className='time d-flex align-items-center mt-5 text-white'>
-                        <p className='time'>00<span> H</span></p>
-                        <p className='time'>00<span> M</span></p>
-                        <p className='time'>00<span> S</span></p>
+                    <section className='hu mt-5 text-white'>
+                        <div className='time'>00<span> H</span></div>
+                        <div className='time'>00<span> M</span></div>
+                        <div className='time'>00<span> S</span></div>
                     </section>
                 </div>
 
                 <div className='man-img'>
-                    <img src='/assets/img/man-wearing-smart-glasses-touching-virtual-screen 1.png' alt='man-wearing-smart-glasses' width={700} height={530} />
+                    <img src='/assets/img/man-wearing-smart-glasses-touching-virtual-screen 1.png' alt='man-wearing-smart-glasses' className='smart' />
                     <img src='/assets/img/Purple-lens-Flare-PNG.png' className='img3' width={500} height={600} />
                     <img src='/assets/img/Image 1.png' className='img2' width={570} height={500} />
                 </div>
