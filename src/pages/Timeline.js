@@ -24,7 +24,7 @@ function Timeline() {
                     </div>
 
                     <div className='divide-1'></div>
-                    <p className='num'>2</p>
+                    <div className='num'>2</div>
 
                     <div className='column'>
                         <h3 className='d'>November 18, 2023</h3>

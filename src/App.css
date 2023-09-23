@@ -353,8 +353,10 @@ h4 {
 
 .woman-bck .shadow-bck {
   position: absolute;
-  bottom: -455px;
-  left: 480px;
+  bottom: -255px;
+  width: 400px;
+  height: 600px;
+  left: 460px;
   z-index: -1;
 }
 
@@ -457,12 +459,12 @@ h4 {
   height: 53px;
 }
 
-.shadow-side {
+.attributes .shadow-side {
   position: absolute;
   bottom: -597px;
-  width: 759px;
-  height: 800px;
-  left: 10px;
+  width: 400px;
+  height: 700px;
+  left: 365px;
   z-index: -1;
   /* opacity: 70%; */
 }
@@ -669,7 +671,7 @@ h4 {
   height: 53px;
   margin-top: 10px;
   position: absolute;
-  left: 720px;
+  left: 690px;
 }
 
 .col-img {
