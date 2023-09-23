@@ -1,8 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import './Registration.css'
+import api from '../components/api/Api'
 
 function Registration() {
+    const [userInfo, setUserInfo] = useState({})
+
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setUserInfo({
+            ...userInfo, [name]: value
+        });
+    }
 
     const ShowModal = () => {
         setTimeout(() => {
@@ -39,7 +48,7 @@ function Registration() {
 
             <div className='containerr'>
                 <div className='img-reg'>
-                    <img src='/assets/img/3d-graphic-designer 1.png' />
+                    <img src='/assets/img/3d-graphic-designer 1.png' width={600} />
                     <img src='/assets/img/sata gra.png' className='img-A' width={20} height={26} />
                     <img src='/assets/img/starr.png' className='img-B' width={20} height={26} />
                     <img src='/assets/img/star pu.png' className='img-C' width={20} height={26} />
@@ -57,25 +66,28 @@ function Registration() {
                         <div className='form-wrap'>
                             <div className='first'>
                                 <label for="text"><b>Team's Name</b></label>
-                                <input type="text" placeholder="Enter your group name" name="name" required />
+                                <input type="text" placeholder="Enter your group name" name="name" onChange={handleChange} required />
 
                                 <label for="email"><b>Email</b></label>
-                                <input type="email" placeholder="Enter your email address" required />
+                                <input type="email" placeholder="Enter your email address" name='email' onChange={handleChange} required />
 
                                 <label for="text"><b>Category</b></label>
-                                <select>
+                                <select name='category' onChange={handleChange}>
                                     <option value='Select your category'>Select your category</option>
+                                    <option value='Select your category'>1</option>
+                                    <option value='Select your category'>2</option>
+                                    <option value='Select your category'>3</option>
                                 </select>
                             </div>
 
                             <div className='second'>
                                 <label for="number"><b>Phone</b></label>
-                                <input type="text" placeholder="Enter your phone number" name="" required />
+                                <input type="text" placeholder="Enter your phone number" name="phone_number" onChange={handleChange} required />
 
                                 <label for="text"><b>Project Topic</b></label>
-                                <input type="text" placeholder="What is your group project topic " required />
+                                <input type="text" placeholder="What is your group project topic " name='project-topic' required />
                                 <label for="text"><b>Group Size</b></label>
-                                <select>
+                                <select name='group-size' onChange={handleChange}>
                                     <option value='Select your category'>Select</option>
                                 </select>                            </div>
 
