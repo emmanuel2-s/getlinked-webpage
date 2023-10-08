@@ -1,21 +1,23 @@
 import React from 'react'
 
 function Faqs() {
-    var acc = document.getElementsByClassName("accordion");
-    var i;
 
-    for (i = 0; i < acc.length; i++) {
-        acc[i].addEventListener("click", function () {
-            this.classList.toggle("active");
-            var panel = this.nextElementSibling;
-            if (panel.style.maxHeight) {
-                panel.style.maxHeight = null;
-            } else {
-                panel.style.maxHeight = panel.scrollHeight + "px";
-            }
-        });
+    const open = () => {
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        }
     }
-
 
     return (
         <>
@@ -61,7 +63,7 @@ function Faqs() {
                     <img src='/assets/img/_.png' className='img3' />
                     <img src='/assets/img/starr.png' alt='star' className='starr' />
 
-                    <img src='/assets/img/cwok_casual_21 1.png' />
+                    <img src='/assets/img/cwok_casual_21 1.png' className='cwork' width={700} />
                     <div className='faqs-iilus-star'>
                         <img src='/assets/img/sata gra.png' className='img_5' />
                         <img src='/assets/img/sata gra.png' className='img_4' />

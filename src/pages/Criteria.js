@@ -8,7 +8,7 @@ function Criteria() {
                     <div className='criteria-illus'>
                         <img src='assets/img/star pu.png' className='criteria-img' width={30} height={36} />
                         <img src='/assets/img/Ellipse 2.png' className='ellipse-2' />
-                        <img src='assets/img/8046554 1.png' />
+                        <img src='assets/img/8046554 1.png' className='illus-1' width={700} />
                         <img src='assets/img/starr.png' className='ss' />
                     </div>
                     <img src='/assets/img/Purple-lens-Flare-PNG.png' className='shadow' width={900} height={600} />
@@ -36,10 +36,10 @@ function Criteria() {
                     <p><span className='intro'>Adherence to Hackathon Rules:</span> Judges will Ensure that the team adhered
                         to the rules and guidelines of the hackathon, including deadlines, use of
                         specific technologies or APIs, and any other competition-specific requirements.</p>
-                    <div className='d-flex '>
+                    <div className='d-flex bb '>
                         <img src='assets/img/star.png' width={30} height={36} />
                         <button className='btn'>Read More</button>
-                        <img src='/assets/img/Purple-lens-Flare-PNG-1.png' className='shadow-side' />
+                        <img src='/assets/img/Purple-lens-Flare-PNG.png' className='shadow-side' />
 
                     </div>
                 </div>

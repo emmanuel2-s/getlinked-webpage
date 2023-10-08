@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #150e28;
   height: 100%;
@@ -11,15 +16,34 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+.closebtn .x {
+  position: absolute;
+  bottom: 13px;
+  left: 6px;
+  text-align: center;
+}
+
+.nav li a {
+  position: relative;
+}
+
+nav {
+  position: fixed;
+  background-image: url(/public/assets/img/Rectangle\ 7.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 10;
+  top: 0;
+}
 
 nav a,
 h1 {
   text-decoration: none;
 }
 
-/* nav li:hover {
-  color: linear-gradient(90deg, #903AFF 3.08%, #FF26B9 93.85%);
-} */
+.nav .closebtn {
+  display: none;
+}
 
 nav h1 {
   font-family: 'Clash Display', sans-serif;
@@ -43,21 +67,42 @@ nav .btn {
   height: 53px;
 }
 
-/* .d {
-  background-image: url(/public/assets/img/Purple-Flare-PNG.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 200px;
-  width: 100px;
-  z-index: -4;
-} */
+nav .nav li a::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 100%;
+  background: #FF26B9;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform .4s linear;
+}
+
+nav .nav li a:hover:before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
 
 .fh {
   margin-left: 150px;
   margin-top: 30px;
 }
 
+.header-container {
+  margin-top: 100px;
+  padding-top: 40px;
+  background-image: url(/public/assets/img/Rectangle\ 7.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
+.d {
+  display: flex;
+  justify-content: space-between;
+}
 
 .d h2 {
   font-family: 'Montserrat', sans-serif;
@@ -134,7 +179,7 @@ nav .btn {
   position: absolute;
   left: 100px;
   top: -50px;
-  z-index: -1;
+  z-index: 1;
   opacity: 50%;
 }
 
@@ -145,7 +190,7 @@ nav .btn {
   letter-spacing: 0em;
   text-align: left;
   margin-left: 100px;
-  width: 522px;
+  width: 370px;
   height: 66px;
 }
 
@@ -190,9 +235,10 @@ nav .btn {
 
 
 .man-img {
-  margin-top: 10px;
+  margin-top: 20px;
   position: relative;
   float: right;
+  margin-right: 70px;
 
 }
 
@@ -206,7 +252,25 @@ nav .btn {
   right: 70px;
   top: -20px;
   z-index: 1;
+  /* transition: transform 6s; */
+  animation-name: example;
+  animation-iteration-count: infinite;
+  animation-duration: 4s;
 }
+
+@keyframes example {
+  0% {
+    rotate: 0deg;
+  }
+
+  100% {
+    rotate: 3600deg;
+  }
+}
+
+/* .man-img .img2:hover {
+  transform: rotate(360deg);
+} */
 
 .man-img .img3 {
   position: absolute;
@@ -265,20 +329,17 @@ h4 {
   color: white;
   line-height: 27.5px;
   margin-top: 10px;
+  text-align: left;
 }
 
 .about-sect img {
   float: right;
   margin-top: 25px;
-  /* position: absolute; */
 }
 
 
 .rules-bg {
   z-index: 2;
-  /* background-image: url(/public/assets/img/Rectangle\ 7.png);
-  background-repeat: no-repeat;
-  background-size: cover; */
   height: 617px;
   display: flex;
   align-items: center;
@@ -353,11 +414,12 @@ h4 {
 
 .woman-bck .shadow-bck {
   position: absolute;
-  bottom: -255px;
+  bottom: -155px;
   width: 400px;
-  height: 600px;
-  left: 460px;
+  height: 500px;
+  left: 450px;
   z-index: -1;
+  opacity: 60%;
 }
 
 .criteria-container {
@@ -461,12 +523,12 @@ h4 {
 
 .attributes .shadow-side {
   position: absolute;
-  bottom: -597px;
-  width: 400px;
-  height: 700px;
-  left: 365px;
+  bottom: -307px;
+  width: 500px;
+  height: 600px;
+  left: 265px;
   z-index: -1;
-  /* opacity: 70%; */
+  opacity: 80%;
 }
 
 .faqs-wrapper {
@@ -531,10 +593,10 @@ h4 {
   margin-left: 100px;
 }
 
-/* .active,
+.active,
 .accordion:hover {
   background-color: #ccc;
-} */
+}
 
 .accordion:after {
   content: '\002B';
@@ -591,13 +653,13 @@ h4 {
 
 .faqs-iilus-star .img_4 {
   position: absolute;
-  bottom: 760px;
-  left: -225px;
+  bottom: 720px;
+  left: -190px;
 }
 
 .faqs-iilus-star .img_5 {
   position: absolute;
-  top: -598px;
+  top: -548px;
   left: -425px;
 }
 
@@ -611,8 +673,8 @@ h4 {
 
 .faqs-illus .starr {
   position: absolute;
-  top: 490px;
-  margin-left: 20px;
+  top: 450px;
+  margin-left: 40px;
 }
 
 .timeline-cont {
@@ -813,7 +875,7 @@ h4 {
   align-items: center;
   justify-content: space-around;
   position: relative;
-  z-index: 9;
+  z-index: 3;
   height: 900px;
 }
 
@@ -1280,6 +1342,7 @@ h4 {
   letter-spacing: 0em;
   text-align: left;
   color: #fff;
+
 }
 
 .contact .loc img,
@@ -1291,4 +1354,453 @@ h4 {
   display: flex;
   align-items: baseline;
   /* justify-content: center; */
+}
+
+@media (max-width:600px) {
+
+  nav h1 {
+    display: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .nav {
+    display: none;
+    text-align: left;
+    font-size: 20px;
+    height: 100%;
+    width: 100%;
+    background-color: #150e28;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 4;
+    padding: 40px;
+    color: white;
+    overflow: auto;
+    padding-top: 80px;
+  }
+
+  .nav li a::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30%;
+    background: #FF26B9;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .4s linear;
+  }
+
+  .nav li a:hover:before {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+
+  .nav li {
+    padding: 15px 10px 8px 72px;
+  }
+
+  .nav .btn {
+    margin-right: 0px;
+    margin-left: 80px;
+    margin-top: 20px;
+    color: #fff;
+    background-image: url(/public/assets/img/Rectangle\ 6.png);
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    width: 173px;
+    height: 53px;
+  }
+
+  .nav .closebtn {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    left: 430px;
+    top: 40px;
+  }
+
+  .nav a:hover {
+    color: #FF26B9;
+  }
+
+  .nav-view {
+    width: 100%;
+  }
+
+  .nav-view h1 {
+    font-family: 'Clash Display', sans-serif;
+    font-weight: bolder;
+    font-size: 35px;
+    margin-left: 50px;
+  }
+
+  .nav-view h1 span {
+    color: #d434fe;
+  }
+
+  .nav-view img {
+    /* margin-right: 50px; */
+    cursor: pointer;
+  }
+
+  .header-container {
+    margin-top: 30px;
+  }
+
+  .d {
+    display: block;
+  }
+
+  .d h2 {
+    margin: 0;
+    margin-right: 0px;
+    padding-left: 20px;
+    font-weight: 600;
+    text-align: center;
+    font-size: 22px;
+  }
+
+  .header {
+    float: none;
+  }
+
+
+  .title h1 {
+    margin-left: 50px;
+    margin-top: 50px;
+  }
+
+  .title p {
+    margin: auto 100px;
+    text-align: center;
+    width: 300px;
+    font-size: 16px;
+  }
+
+  .title .img {
+    top: -254px;
+    left: -103px;
+    opacity: 40%;
+  }
+
+  .title .btn {
+    margin-left: 180px;
+  }
+
+  .hu {
+    display: flex;
+    margin-left: 120px;
+  }
+
+  .man-img {
+    float: none;
+    margin-right: 0px;
+    margin-top: 30px;
+  }
+
+  .man-img .img2,
+  .man-img .img3 {
+    position: absolute;
+    right: 50px;
+    top: 430px;
+    z-index: 1;
+    width: 500px;
+    height: 500px;
+  }
+
+  .man-img .smart {
+    width: 100%;
+    height: 100%;
+  }
+
+  .abbb {
+    height: 100%;
+    padding-top: 20px;
+  }
+
+  .about .imgg1 {
+    margin-left: 70px;
+  }
+
+  .about-sect {
+    margin-left: 40px;
+  }
+
+  .about-sect p {
+    line-height: 20.5px;
+    padding-bottom: 40px;
+  }
+
+  .about .imgg {
+    position: absolute;
+    left: 235px;
+    top: 230px;
+  }
+
+  .rules-bg {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin-left: 15px;
+  }
+
+  .rules {
+    order: 2;
+    margin-top: 20px;
+  }
+
+  .rules h1 {
+    margin: 25px auto;
+    text-align: center;
+  }
+
+  .rules p {
+    margin: 50px;
+    text-align: left;
+    width: 470px;
+
+  }
+
+  .woman-bck .illustration {
+    order: 1;
+  }
+
+  .woman-bck .shadow-bck {
+    display: none;
+  }
+
+  .ellipse {
+    display: none;
+  }
+
+  .criteria-container {
+    display: block;
+    height: 100%;
+  }
+
+  .criteria {
+    position: relative;
+    padding-top: 100px;
+    margin-left: 20px;
+    z-index: 2;
+  }
+
+  .criteria-img {
+    position: absolute;
+    left: 150px;
+    top: -105px;
+  }
+
+  .criteria-illus {
+    position: relative;
+    padding-top: 30px;
+  }
+
+  .criteria-illus .illus-1 {
+    width: 500px;
+  }
+
+  .criteria-illus .ellipse-2 {
+    display: none;
+  }
+
+  .criteria-illus .ss {
+    position: absolute;
+    bottom: 175px;
+    left: 295px;
+  }
+
+  .criteria .shadow {
+    position: absolute;
+    bottom: -150px;
+    right: 90px;
+    z-index: -1;
+    opacity: 60%;
+    width: 500px;
+    height: 500px;
+  }
+
+  .attributes h1 {
+    color: #fff;
+    width: 267px;
+    height: 86px;
+    text-align: center;
+    font-family: 'Clash Display', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 42.56px;
+    margin-left: 0px;
+    margin: 25px auto;
+  }
+
+  .attributes h1 span {
+    color: #d434fe;
+  }
+
+  .attributes p {
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    width: 430px;
+    margin-left: 0px;
+    margin: 10px auto;
+    padding-left: 50px;
+  }
+
+  .attributes p .intro {
+    color: #FF26B9;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  .attributes .bb {
+    flex-direction: row-reverse;
+  }
+
+  .attributes .btn {
+    color: #fff;
+    background-image: url(/public/assets/img/Rectangle\ 6.png);
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    width: 173px;
+    align-self: center;
+    margin-left: 0px;
+    margin-right: 150px;
+    height: 53px;
+  }
+
+  .attributes .shadow-side {
+    position: absolute;
+    bottom: -207px;
+    width: 500px;
+    height: 700px;
+    left: 205px;
+    z-index: -1;
+    opacity: 60%;
+  }
+
+
+  .faqs-wrapper {
+    display: block;
+    padding-bottom: 50px;
+  }
+
+  .faqs-container {
+    text-align: center;
+    margin-left: 40px;
+  }
+
+  .faqs img {
+    margin-left: 0px;
+  }
+
+  .faqs h1 {
+    font-family: 'Clash Display', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 43px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #fff;
+    width: 253px;
+    padding-top: 10px;
+    margin: 10px auto;
+    /* margin-left: 0px; */
+  }
+
+  .faqs h1 span {
+    color: #d434fe;
+  }
+
+  .faqs p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: center;
+    width: 360px;
+    margin-left: 50px;
+    color: #fff;
+    padding-bottom: 30px;
+  }
+
+  .accordion {
+    margin-left: 0px;
+  }
+
+  .faqs-illus {
+    width: 500px;
+    padding-top: 100px;
+    position: relative;
+    margin-right: 0px;
+  }
+
+  .faqs-illus .cwork {
+    width: 500px;
+  }
+
+  .faqs-illus .img1 {
+    position: absolute;
+    top: 100px;
+    left: 49px;
+  }
+
+  .faqs-illus .img2 {
+    position: absolute;
+    top: 30px;
+    left: 155px;
+  }
+
+  .faqs-illus .img3 {
+    position: absolute;
+    top: 60px;
+    left: 285px;
+  }
+
+  .faqs-.about {
+    position: absolute;
+    bottom: -2190px;
+    left: 1050px;
+  }
+
+  .faqs-iilus-star .img_4 {
+    position: absolute;
+    bottom: 520px;
+    left: -210px;
+  }
+
+  .faqs-iilus-star .img_5 {
+    position: absolute;
+    top: 348px;
+    left: 325px;
+  }
+
+
+  .faqs-illus .faqs-iilus-star {
+    float: right;
+    position: absolute;
+    bottom: -20px;
+    right: 150px;
+  }
+
+  .faqs-illus .starr {
+    position: absolute;
+    top: 340px;
+    margin-left: 40px;
+  }
 }

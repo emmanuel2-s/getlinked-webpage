@@ -16,13 +16,13 @@ function Rules() {
                         <img src='/assets/img/star.png' className='' width={26} height={32} />
                     </div>
                 </div>
-                <section className='woman-bck'>
+                <div className='woman-bck'>
                     <img src='/assets/img/Ellipse 2.png' className='ellipse' />
                     <div className='illustration'>
                         <img src='/assets/img/7450159 1.png' alt='illustration' />
                     </div>
                     <img src='assets/img/Purple-Lens-Flare-PNG-1.png' className='shadow-bck' />
-                </section>
+                </div>
             </div>
             <hr className='text-white' />
         </>

@@ -70,6 +70,10 @@
     margin-right: 120px;
 }
 
+.nav-contact {
+    background: linear-gradient(270deg, #903AFF 0%, #D434FE 56.42%, #FF26B9 99.99%, #FE34B9 100%);
+}
+
 .form-cont .img2 {
     position: absolute;
     left: 546px;

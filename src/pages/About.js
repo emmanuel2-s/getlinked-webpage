@@ -4,7 +4,7 @@ function About() {
     return (
         <>
 
-            <div className='abbb d-flex align-items-center justify-content-center mb-5'>
+            <div className='abbb d-md-flex align-items-md-center justify-content-md-center mb-5 d-sm-block'>
                 <img src='/assets/img/sata gra.png' alt='sata gra' className='sata' width={21} height={25} />
                 <div className='about'>
                     <img src='/assets/img/the big idea 1.png' className='imgg1' width={400} height={400} />

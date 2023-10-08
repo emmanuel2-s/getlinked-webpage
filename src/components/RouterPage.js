@@ -21,7 +21,7 @@ function RouterPage() {
             <BrowserRouter>
                 <Routes>
                     <Route path='/contact' element={<Contact />} />
-                    <Route path='/' element={<Home />} />
+                    <Route exact path='/' element={<Home />} />
                     <Route path='/register' element={<Registration />} />
                 </Routes>
             </BrowserRouter>
